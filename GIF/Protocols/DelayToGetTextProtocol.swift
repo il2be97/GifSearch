@@ -7,6 +7,7 @@
 
 import Foundation
 
+/* Эти протоколы связано непосредственно с моделями, поэтому папку можно перенести туда */
 protocol DelayToGetTextProtocol {
     func startTimer()
 }

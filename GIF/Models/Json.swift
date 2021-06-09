@@ -7,6 +7,8 @@
 
 import Foundation
 
+/* Измени пожалуйста название файла */
+
 struct responseFromTheServer: Decodable {
     var data: [DataJson]
 }
@@ -23,7 +25,9 @@ struct Original: Decodable {
     var height: String
     var width: String
     var url: URL?
+
     
+    /* поставь breakpoint и проверь используется ли этот метод, есть метод init(from decoder: Decoder) throws, почитай пожалуйста про него */
     init(url: String,height:String, width: String ) {
         self.url = URL(string: url) ?? nil
         self.height = height
