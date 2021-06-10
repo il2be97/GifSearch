@@ -13,6 +13,7 @@ class CollectionViewCellWithGif: UICollectionViewCell {
     // MARK: IBOutlets
     @IBOutlet weak var gifImageView: UIImageView!
     
+    static let identifier: String = "CollectionViewCellWithGif"
     
     // MARK: Conversion .. adding a GIF in the cell
     func runGif(with url: URL){

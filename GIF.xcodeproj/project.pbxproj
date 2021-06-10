@@ -8,39 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		1B2FD1CC065F5A8886BEB055 /* Pods_GIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BACBAFC4B0703F632B5D079 /* Pods_GIF.framework */; };
+		84203F592670F1DA0040F6B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84203F582670F1DA0040F6B8 /* Constants.swift */; };
 		845A62982668E3B900C3FBB5 /* ServerManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A62972668E3B900C3FBB5 /* ServerManagerProtocol.swift */; };
-		845A629B2668EB2200C3FBB5 /* DelayToGetText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A629A2668EB2200C3FBB5 /* DelayToGetText.swift */; };
-		845A629E2668EB3D00C3FBB5 /* DelayToGetTextProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A629D2668EB3D00C3FBB5 /* DelayToGetTextProtocol.swift */; };
+		845A629B2668EB2200C3FBB5 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A629A2668EB2200C3FBB5 /* TimerManager.swift */; };
+		845A629E2668EB3D00C3FBB5 /* TimerManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A629D2668EB3D00C3FBB5 /* TimerManagerProtocol.swift */; };
 		84A4BEA32661268600B0CD0E /* CollectionViewCellWithGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4BEA12661268600B0CD0E /* CollectionViewCellWithGif.swift */; };
 		84A4BEA42661268600B0CD0E /* CollectionViewCellWithGif.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4BEA22661268600B0CD0E /* CollectionViewCellWithGif.xib */; };
 		84AC37DF265D06E60079611F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC37DE265D06E60079611F /* AppDelegate.swift */; };
 		84AC37E1265D06E60079611F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC37E0265D06E60079611F /* SceneDelegate.swift */; };
-		84AC37E3265D06E60079611F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC37E2265D06E60079611F /* ViewController.swift */; };
+		84AC37E3265D06E60079611F /* SearchGifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC37E2265D06E60079611F /* SearchGifViewController.swift */; };
 		84AC37E6265D06E60079611F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AC37E4265D06E60079611F /* Main.storyboard */; };
 		84AC37E8265D06EE0079611F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84AC37E7265D06EE0079611F /* Assets.xcassets */; };
 		84AC37EB265D06EE0079611F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AC37E9265D06EE0079611F /* LaunchScreen.storyboard */; };
 		84AC37F7265D36DD0079611F /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC37F6265D36DD0079611F /* ServerManager.swift */; };
-		84AC3808265E55CF0079611F /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC3807265E55CE0079611F /* Json.swift */; };
+		84AC3808265E55CF0079611F /* ResponseFromTheServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC3807265E55CE0079611F /* ResponseFromTheServer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		19157F72AD28E6D1456DC432 /* Pods-GIF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIF.debug.xcconfig"; path = "Target Support Files/Pods-GIF/Pods-GIF.debug.xcconfig"; sourceTree = "<group>"; };
 		62123C957ED316CD31F953D9 /* Pods-GIF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIF.release.xcconfig"; path = "Target Support Files/Pods-GIF/Pods-GIF.release.xcconfig"; sourceTree = "<group>"; };
+		84203F582670F1DA0040F6B8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		845A62972668E3B900C3FBB5 /* ServerManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManagerProtocol.swift; sourceTree = "<group>"; };
-		845A629A2668EB2200C3FBB5 /* DelayToGetText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayToGetText.swift; sourceTree = "<group>"; };
-		845A629D2668EB3D00C3FBB5 /* DelayToGetTextProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayToGetTextProtocol.swift; sourceTree = "<group>"; };
+		845A629A2668EB2200C3FBB5 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		845A629D2668EB3D00C3FBB5 /* TimerManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManagerProtocol.swift; sourceTree = "<group>"; };
 		84A4BEA12661268600B0CD0E /* CollectionViewCellWithGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellWithGif.swift; sourceTree = "<group>"; };
 		84A4BEA22661268600B0CD0E /* CollectionViewCellWithGif.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCellWithGif.xib; sourceTree = "<group>"; };
 		84AC37DB265D06E60079611F /* GIF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AC37DE265D06E60079611F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84AC37E0265D06E60079611F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84AC37E2265D06E60079611F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84AC37E2265D06E60079611F /* SearchGifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGifViewController.swift; sourceTree = "<group>"; };
 		84AC37E5265D06E60079611F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84AC37E7265D06EE0079611F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84AC37EA265D06EE0079611F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84AC37EC265D06EE0079611F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84AC37F6265D36DD0079611F /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
-		84AC3807265E55CE0079611F /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		84AC3807265E55CE0079611F /* ResponseFromTheServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseFromTheServer.swift; sourceTree = "<group>"; };
 		9BACBAFC4B0703F632B5D079 /* Pods_GIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -65,10 +67,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		84203F572670F1B60040F6B8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				84203F582670F1DA0040F6B8 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		845A62A3266CF3C100C3FBB5 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				845A629D2668EB3D00C3FBB5 /* DelayToGetTextProtocol.swift */,
+				845A629D2668EB3D00C3FBB5 /* TimerManagerProtocol.swift */,
 				845A62972668E3B900C3FBB5 /* ServerManagerProtocol.swift */,
 			);
 			path = Protocols;
@@ -95,7 +105,7 @@
 		84AC37DD265D06E60079611F /* GIF */ = {
 			isa = PBXGroup;
 			children = (
-				845A62A3266CF3C100C3FBB5 /* Protocols */,
+				84203F572670F1B60040F6B8 /* Constants */,
 				84AC380C265E563B0079611F /* Models */,
 				84AC380D265E56400079611F /* Views */,
 				84AC380E265E56450079611F /* Controllers */,
@@ -120,9 +130,10 @@
 		84AC380C265E563B0079611F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				845A62A3266CF3C100C3FBB5 /* Protocols */,
 				84AC37F6265D36DD0079611F /* ServerManager.swift */,
-				84AC3807265E55CE0079611F /* Json.swift */,
-				845A629A2668EB2200C3FBB5 /* DelayToGetText.swift */,
+				84AC3807265E55CE0079611F /* ResponseFromTheServer.swift */,
+				845A629A2668EB2200C3FBB5 /* TimerManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -139,7 +150,7 @@
 		84AC380E265E56450079611F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				84AC37E2265D06E60079611F /* ViewController.swift */,
+				84AC37E2265D06E60079611F /* SearchGifViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -268,14 +279,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				84AC37F7265D36DD0079611F /* ServerManager.swift in Sources */,
-				84AC37E3265D06E60079611F /* ViewController.swift in Sources */,
+				84AC37E3265D06E60079611F /* SearchGifViewController.swift in Sources */,
 				84A4BEA32661268600B0CD0E /* CollectionViewCellWithGif.swift in Sources */,
 				845A62982668E3B900C3FBB5 /* ServerManagerProtocol.swift in Sources */,
 				84AC37DF265D06E60079611F /* AppDelegate.swift in Sources */,
-				845A629E2668EB3D00C3FBB5 /* DelayToGetTextProtocol.swift in Sources */,
+				84203F592670F1DA0040F6B8 /* Constants.swift in Sources */,
+				845A629E2668EB3D00C3FBB5 /* TimerManagerProtocol.swift in Sources */,
 				84AC37E1265D06E60079611F /* SceneDelegate.swift in Sources */,
-				84AC3808265E55CF0079611F /* Json.swift in Sources */,
-				845A629B2668EB2200C3FBB5 /* DelayToGetText.swift in Sources */,
+				84AC3808265E55CF0079611F /* ResponseFromTheServer.swift in Sources */,
+				845A629B2668EB2200C3FBB5 /* TimerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
