@@ -11,6 +11,7 @@ struct ResponseFromTheServer: Decodable {
     var data: [DataJson]
 }
 
+/* DataJson - не очень понятный объект */
 struct DataJson: Decodable {
     var images: Images
 }

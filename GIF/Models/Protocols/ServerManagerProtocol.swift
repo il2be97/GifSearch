@@ -7,6 +7,7 @@
 
 import UIKit
 
+// InformationAboutGig - мне кажется последняя буква не должна быть g :))
 protocol ServerManagerProtocol {
     func serverRequest(apiRequest: String, textSearch: String?) -> [InformationAboutGig]
 }

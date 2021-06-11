@@ -17,7 +17,11 @@ class SearchGifViewController: UIViewController {
     
     /* Если ты не собираешься в процессе менять эти переменные - они не должны быть var
      
-     -- Тогда их необходимо сразу инициализировать. Так будет правильно??*/
+     -- Тогда их необходимо сразу инициализировать. Так будет правильно??
+     
+     -- Да, ты их нигде не пересоздаешься и ты их один раз за время жизни контроллера создаешьб поэтому если ты проиницилизируешь сразу serverManager, timerManager - будет ок (конечно можешь переопределить инициализатор, но так как ты работаешь со сторибордом - это не получится сделать
+     
+     */
     
     var serverManager: ServerManagerProtocol?
     var timerManager: TimerManager?
@@ -26,6 +30,7 @@ class SearchGifViewController: UIViewController {
     private lazy var cellHeight: CGFloat = 150
     private lazy var cellWidth: CGFloat = collectionView.frame.width / 2 - 10
     // чем отличие :Int и =Int()
+    /// Это вопрос?
     
     // MARK: Lyfe cycle
     override func viewDidLoad() {
@@ -48,6 +53,15 @@ class SearchGifViewController: UIViewController {
              self.collectionView.scrollToItem(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
              даже при пустом массиве если ты это вызовешь - не будет страшно
              -- ЗАЧЕМ тут этот метод? */
+            
+            /*
+             По-сути у тебя идет дублирование кода (не страшное - на как вариант можно исправить):
+             
+             collectionView.reloadData()
+             arrayGif = arrayGifInformation
+             
+             - можно вынести логику в одно место, чтобы избежать дублирование - но это не страшно
+             */
             
             arrayGif.removeAll()
             collectionView.reloadData()
@@ -84,6 +98,7 @@ extension SearchGifViewController: TimerManagerDelegate {
             arrayGif = arrayGifInformation
         }
         
+        /* даже если у тебя ошибка с сервера пришла, массив по-сути не изменится но ты скроллишь вверх и обновляешь таблицу - не думаю что это правильно*/
         DispatchQueue.main.async {
             self.collectionView.scrollToItem(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
             self.collectionView.reloadData()
